@@ -6,8 +6,8 @@
   </head>
   <body>
     <h1><%= pageTitle %></h1>
-    <% usuarios.forEach(usuario => {%>
-    <span><%= usuario %></span>
+    <% files.forEach(file => {%>
+    <a href="<%= '/download/' + file %>"> <%= file %></a>
     <br />
     <% }) %>
   </body>
